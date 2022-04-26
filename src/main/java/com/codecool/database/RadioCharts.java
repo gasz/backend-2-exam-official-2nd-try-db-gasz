@@ -17,11 +17,37 @@ public class RadioCharts {
 
 
     public List<String> getArtists() {
+        try (Connection connection = DriverManager.getConnection(this.dbUrl, this.dbUser, this.dbPassword)) {
+
+            List<String> result = new ArrayList<>();
+            return result;
+        }
+        catch (Exception e) {
+            throw new RuntimeException();
+        }
+
     }
 
     public String getMostPlayedSong() {
+        try (Connection connection = DriverManager.getConnection(this.dbUrl, this.dbUser, this.dbPassword)) {
+
+            String result = "";
+            return result;
+        }
+        catch (Exception e) {
+            throw new RuntimeException();
+        }
+
     }
 
     public String getMostActiveArtist() {
+        try (Connection connection = DriverManager.getConnection(this.dbUrl, this.dbUser, this.dbPassword)) {
+
+            String result = "";
+            return result;
+        }
+        catch (Exception e) {
+            throw new RuntimeException();
+        }
     }
 }

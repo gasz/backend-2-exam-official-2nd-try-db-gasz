@@ -21,11 +21,16 @@ Az egyes hónapok adatai külön sorba kerülnek, így egy előadő egy száma t
 | Son Lux        | Dream State      | 25          |
 | Chris Isaak    | Let Me Down Easy | 20          |
 
-*FONTOS:* Nem kell adatbázist elindítani vagy létrehozni. Az adatbázist a teszt esetek automatikusan létrehozzák ls feltöltik adatokkal, nektek csak kapcsolódni kell hozzá a megadott adatok alapján (DB_URL, USERNAME, PASSWORD) és lekérdezni belőle a szükséges adatokat
+*FONTOS:* Nem kell adatbázist elindítani vagy létrehozni. 
+Az adatbázist a teszt esetek automatikusan létrehozzák ls feltöltik adatokkal, 
+nektek csak kapcsolódni kell hozzá a megadott adatok alapján (DB_URL, USERNAME, PASSWORD) 
+és lekérdezni belőle a szükséges adatokat
 
 # Java alkalmazás
 
-Implementáld a `RadioCharts` osztályt, ami konstruktor paraméterben megkapja az adatbázis eléréshez szükséges adatokat (url, user, password). Az osztályban hozd létre az alábbi metódusokat:
+Implementáld a `RadioCharts` osztályt, 
+ami konstruktor paraméterben megkapja az adatbázis eléréshez szükséges adatokat (url, user, password). 
+Az osztályban hozd létre az alábbi metódusokat:
 
 - `getArtists()`: visszatér az összes előadóval, ABC sorrendben, ismétlődések nélkül.
 - `getMostPlayedSong()`: adja vissza annak a számnak a címét a nevét, amelyiket az évben a legtöbbször játszottak a rádiók.
